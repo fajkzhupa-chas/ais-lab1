@@ -1,3 +1,4 @@
+<img width="1162" height="742" alt="Screenshot from 2026-04-29 14-56-04" src="https://github.com/user-attachments/assets/ce4841de-b693-4cc8-909f-735c9f0f98a6" />
 <img width="1162" height="742" alt="Screenshot from 2026-04-29 14-52-17" src="https://github.com/user-attachments/assets/eb0b294b-5e5b-4bc3-80fc-815cceaf64db" />
 <img width="1920" height="1048" alt="Screenshot from 2026-04-29 14-30-55" src="https://github.com/user-attachments/assets/ea087edb-2f30-4904-8895-6f653e923bf9" />
 # ais-lab1
