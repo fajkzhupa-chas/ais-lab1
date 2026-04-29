@@ -21,29 +21,20 @@ Genom att kombinera traditionell regelbaserad övervakning (som direkt fångar k
 
 ### 1. Bekräftad anslutning & Händelseflöde
 *Wazuh tar emot data från agenten `debian-fajk` och identifierar olika MITRE ATT&CK-taktiker.*
-![Wazuh Agent Ansluten](Screenshot%20from%202026-04-27%2016-58-38.png)
+![Wazuh Agent Ansluten](https://github.com/user-attachments/assets/844d2f65-452e-47b5-94bf-0d56f81bf9e8)
 
 ### 2. Detektion av simulerade attacker (FIM)
 *Realtidsövervakningen (FIM) upptäcker framgångsrikt när en fil skapas och raderas i den övervakade mappen.*
-![FIM Detektion](Screenshot%20from%202026-04-27%2017-14-38.png)
+![FIM Detektion](https://github.com/user-attachments/assets/c8874a08-986c-409e-a405-512d0cf0124f)
 
 ### 3. Anpassad Säkerhetsöversikt (Dashboard)
 *Visualisering av de senaste 24 timmarnas loggar, fördelat på larmkategori, IP-adresser och tid.*
-![Säkerhetsöversikt Dashboard](Screenshot%20from%202026-04-29%2014-30-55.png)
+![Säkerhetsöversikt Dashboard](https://github.com/user-attachments/assets/ea087edb-2f30-4904-8895-6f653e923bf9)
 
 ### 4. AI-detektion och Larmgenerering
 *Python-skripten analyserar loggdata, hittar en anomali (z=1.79) och konverterar det till ett larm som skrivs tillbaka till systemet.*
-![AI Detektion](Screenshot%20from%202026-04-29%2014-52-17.png)
+![AI Detektion](https://github.com/user-attachments/assets/eb0b294b-5e5b-4bc3-80fc-815cceaf64db)
 
 ### 5. Automatiserad Incidentrespons (Blockering i brandvägg)
 *Playbook-skriptet reagerar på AI-larmet och lägger automatiskt till en DROP-regel i iptables för den misstänkta IP-adressen (8.8.8.8).*
-![Iptables blockering](Screenshot%20from%202026-04-29%2014-56-04.png)
-
-
-
-<img width="1162" height="742" alt="Screenshot from 2026-04-29 14-56-04" src="https://github.com/user-attachments/assets/ce4841de-b693-4cc8-909f-735c9f0f98a6" />
-<img width="1162" height="742" alt="Screenshot from 2026-04-29 14-52-17" src="https://github.com/user-attachments/assets/eb0b294b-5e5b-4bc3-80fc-815cceaf64db" />
-<img width="1920" height="1048" alt="Screenshot from 2026-04-29 14-30-55" src="https://github.com/user-attachments/assets/ea087edb-2f30-4904-8895-6f653e923bf9" />
-# ais-lab1
-<img width="1920" height="1048" alt="Screenshot from 2026-04-27 16-58-38" src="https://github.com/user-attachments/assets/844d2f65-452e-47b5-94bf-0d56f81bf9e8" />
-<img width="1920" height="1048" alt="Screenshot from 2026-04-27 17-14-38" src="https://github.com/user-attachments/assets/c8874a08-986c-409e-a405-512d0cf0124f" />
+![Iptables blockering](https://github.com/user-attachments/assets/ce4841de-b693-4cc8-909f-735c9f0f98a6)
