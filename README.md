@@ -12,8 +12,11 @@ Det övervakningssystem som byggts upp under denna labb följer ett tydligt och 
 4. **Automatiserad Larmhantering:** Skriptet `alert_manager.py` klassificerar AI-motorns poäng och genererar formaterade larm (Medium, High, Critical) som matas tillbaka in i systemet.
 5. **Automatiserad Incidentrespons (SOAR):** Skriptet `response_playbook.py` fungerar som sista försvarslinje. Den agerar omedelbart på genererade larm och integrerar direkt med Linux-kärnan (`iptables`) för att blockera angriparens IP-adress, helt utan mänsklig inblandning.
 
-### Reflektion
+### Reflektion och Utmaningar
 Genom att kombinera traditionell regelbaserad övervakning (som direkt fångar kända hot, t.ex. brute-force) med AI-stödd anomalidetektering (som kan hitta okända avvikelser) skapas ett mycket robust försvar. Den största lärdomen är kraften i automatiserad incidentrespons; att låta ett skript blockera en attack i brandväggen tar millisekunder, vilket minimerar skadan avsevärt jämfört med om en människa manuellt hade behövt analysera larmet och agera.
+
+**Utmaningar under labben:**
+En specifik utmaning jag stötte på var vid insamlingen av baslinjedata (Steg 11). Eftersom OpenSearch-databasens port (9200) var blockerad utifrån av säkerhetsskäl på kurs-managern, kunde jag inte köra `curl`-kommandot för att exportera loggarna. Jag löste detta genom att simulera och skapa en egen formaterad `baseline_alerts.json` med realistisk testdata. Detta var otroligt lärorikt då det tvingade mig att förstå exakt hur OpenSearch strukturerar sin JSON-data, och det gjorde att jag ändå kunde bygga, träna och verifiera min AI-modell lokalt.
 
 ---
 
