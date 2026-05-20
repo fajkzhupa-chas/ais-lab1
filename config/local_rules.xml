@@ -1,0 +1,21 @@
+<group name="local,syslog,sshd,">
+
+  <rule id="100001" level="8">
+    <decoded_as>syslog</decoded_as>
+    <match>CUSTOM_ALERT_TEST</match>
+    <description>Custom Rule 1: Manuellt testlarm genererat via logger</description>
+  </rule>
+
+  <rule id="100002" level="7">
+    <if_sid>5716</if_sid>
+    <match>admin</match>
+    <description>Custom Rule 2: Misslyckad SSH-inloggning för användaren 'admin'</description>
+  </rule>
+
+  <rule id="100003" level="10">
+    <if_sid>550</if_sid>
+    <match>/etc/ssh/sshd_config</match>
+    <description>Custom Rule 3: Känslig systemfil ändrad (sshd_config)</description>
+  </rule>
+
+</group>
