@@ -42,6 +42,10 @@ En specifik utmaning jag stötte på var vid insamlingen av baslinjedata (Steg 1
 *Playbook-skriptet reagerar på AI-larmet och lägger automatiskt till en DROP-regel i iptables för den misstänkta IP-adressen (8.8.8.8).*
 ![Iptables blockering](https://github.com/user-attachments/assets/ce4841de-b693-4cc8-909f-735c9f0f98a6)
 
-<img width="1917" height="994" alt="Screenshot from 2026-05-20 10-28-26" src="https://github.com/user-attachments/assets/617774c4-5f01-4c67-81f2-6ce9f3504434" />
-<img width="1917" height="994" alt="Screenshot from 2026-05-20 10-30-28" src="https://github.com/user-attachments/assets/e8093bdc-3acf-4df1-809b-d4f657b4321f" />
+### 6. Komplettering: Egendefinierade Larm (Custom Rules)
+*Här visas hur de inlagda reglerna från `local_rules.xml` fångar upp och larmar vid misslyckade SSH-inloggningsförsök (Authentication failure).*
+![Custom Rule Larm](https://github.com/user-attachments/assets/617774c4-5f01-4c67-81f2-6ce9f3504434)
 
+### 7. Komplettering: FIM-larm i Dashboard
+*Filövervakningen (FIM) reagerar direkt och genererar specifika `syscheck`-larm när en testfil manipuleras (läggs till och raderas) på systemet.*
+![FIM Dashboard Larm](https://github.com/user-attachments/assets/e8093bdc-3acf-4df1-809b-d4f657b4321f)
